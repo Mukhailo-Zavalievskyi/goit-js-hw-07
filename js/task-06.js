@@ -27,7 +27,9 @@ function createBoxes() {
       size += 10;
     }
 
+    boxesRef.innerHTML = '';
     boxesRef.append(...boxes);
+    inputRef.value = '';
   } else {
     alert('The value must be between 1 and 100');
   }
